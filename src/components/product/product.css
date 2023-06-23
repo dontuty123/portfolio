@@ -1,5 +1,4 @@
 .p {
-  width: 30%;
   height: 40vh;
   margin: 20px 10px;
   border: 2px solid rgb(232, 230, 234);
@@ -16,6 +15,10 @@
   z-index: 2;
 }
 
+a {
+  text-decoration: none;
+}
+
 .p-circle {
   width: 7px;
   height: 7px;
@@ -27,9 +30,6 @@
 .p-img {
   width: 100%;
   transition: all 6s ease;
-}
-
-.p:hover {
 }
 
 .p:hover .p-img {
