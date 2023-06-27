@@ -1,8 +1,6 @@
 /** @format */
 
-import React from "react";
 import "./intro.css";
-import Me from "../../img/men.png";
 
 const Intro = () => {
   return (
