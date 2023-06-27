@@ -1,3 +1,5 @@
+/** @format */
+
 .i {
   display: flex;
   height: 100vh;
@@ -67,14 +69,6 @@
   position: relative;
 }
 
-.i-bg {
-  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0 53%, 19% 0);
-  background-color: rgba(0, 132, 59, 0.47);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
 .i-img {
   width: 100%;
   height: 100%;
@@ -98,4 +92,69 @@
   .i-desc {
     display: none;
   }
+}
+
+.body {
+  position: absolute;
+  display: flex;
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0 53%, 19% 0);
+  background-color: rgba(0, 132, 59, 0.47);
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  background: #ce5937;
+  background: -moz-linear-gradient(left, #ce5937 0%, #1c6ea4 81%, #c59237 100%);
+  background: -webkit-linear-gradient(left, #ce5937 0%, #1c6ea4 81%, #c59237 100%);
+  background: linear-gradient(to right, #ce5937 0%, #1c6ea4 81%, #c59237 100%);
+}
+.glowMe,
+.glowAll {
+  opacity: 0;
+  transition: opacity 300ms linear 0s;
+}
+svg {
+  width: 30vw;
+  height: 30vw;
+  cursor: pointer;
+}
+svg:hover .glowMe {
+  opacity: 0.5;
+}
+svg:hover .glowAll {
+  opacity: 1;
+}
+.buttonTop {
+  fill: #5f309b;
+  transition: fill 300ms linear 0s;
+}
+svg:hover .buttonTop {
+  fill: #a661ff;
+}
+.buttonSides {
+  fill: #371b5b;
+  transition: fill 300ms linear 0s;
+}
+svg:hover .buttonSides {
+  fill: #763ac2;
+}
+svg:focus {
+  outline: none;
+}
+svg:focus .buttonTop,
+svg:focus .playSides {
+  stroke: white;
+  stroke-width: 2px;
+}
+svg:focus .playSides {
+  stroke-width: 1px;
+}
+svg:active .buttonTop {
+  fill: #c79cff;
+}
+
+svg:nth-of-type(1) {
+  transform: translate(37%, -35%);
+}
+svg:nth-of-type(3) {
+  transform: translate(-37%, 35%);
 }

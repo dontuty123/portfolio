@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useContext, useRef, useState } from "react";
 import "./contact.css";
 import Phone from "../../img/phone.png";
@@ -14,22 +16,15 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_l2xz1cf",
-        "template_cp0422e",
-        formRef.current,
-        "xH3nC7htjN1cC13vy"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm("service_l2xz1cf", "template_cp0422e", formRef.current, "xH3nC7htjN1cC13vy").then(
+      (result) => {
+        console.log(result.text);
+        setDone(true);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
   return (
     <div className="c">
@@ -54,9 +49,8 @@ const Contact = () => {
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <b>What's your story?</b> Leave a message if you have any question
-            or you just want to tell some one about your ranny day, I'll be
-            right here.
+            <b>What's your story?</b> Leave a message if you have any question or you just want to tell some one about
+            your ranny day, I'll be right here.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
