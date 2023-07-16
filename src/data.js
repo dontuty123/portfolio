@@ -1,3 +1,5 @@
+/** @format */
+
 export const products = [
   {
     id: 1,
@@ -9,16 +11,16 @@ export const products = [
 
   {
     id: 2,
-    github: "https://github.com/dontuty123/admin-page.git",
+    github: "https://github.com/dontuty123/Booking.git",
     img: "/img/screenshoot2.png",
-    name: "Admin page for E-Commerce web application",
-    desc: "An admin page for E-Commerce web application where user can control and grow their own store",
+    name: "Booking flight ticket and hotel room",
+    desc: "Booking flight ticket and hotel room with a better price",
   },
   {
     id: 3,
-    github: "https://github.com/dontuty123/admin-page.git",
+    github: "https://github.com/dontuty123/ShopeeClone",
     img: "/img/screenshoot3.png",
-    name: "Admin page for E-Commerce web application",
-    desc: "An admin page for E-Commerce web application where user can control and grow their own store",
+    name: "Shopee clone",
+    desc: "Shopee clone",
   },
 ];

@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import "./productList.css";
 import Product from "./../product/Product";
